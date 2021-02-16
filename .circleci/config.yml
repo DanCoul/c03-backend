@@ -12,8 +12,11 @@ jobs:
       - run: npm --version
       - run: npm install
       - run: npm run test
-      
-integration:
+
+  integration:
+    machine: true
+    steps:
+      - run: echo "tests 1 have passed!"
 
 workflows:
   workflowIntegration:
