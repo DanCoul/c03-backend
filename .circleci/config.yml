@@ -19,8 +19,7 @@ jobs:
     steps:
       - run: git clone https://github.com/DanCoul/c03-backend.git
       - run: git clone https://github.com/DanCoul/c03-frontend.git 
-      - run: ls -al
-#      - run: cd /c03-frontend && npm install && npm run build && ls -al
+      - run: cd c03-frontend/ && npm install && npm run build && ls -al
       - run: echo "a"
 
 
